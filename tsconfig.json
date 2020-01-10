@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    /*すべての厳密な型チェックオプションを有効にします。*/
+    "strict": true /* Enable all strict type-checking options. */,
+    "esModuleInterop": true,
+    /* Experimental Options */
+    /*ES7デコレータの実験的なサポートを有効にします。*/
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    /*デコレータのタイプメタデータを送信するための実験的なサポートを有効にします。*/
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
+    /* Advanced Options */
+    /*同じファイルへの一貫性のないケース参照を禁止します*/
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  },
+  /*コンパイルしないファイルを指定*/
+  "exclude": ["node_modules"],
+  /*コンパイルするファイルを指定、これを指定しない場合はexcludeで指定したファイル以外全てをコンパイルする*/
+  "include": ["./src/**/*tsx", "./src/**/*.ts"]
+}
